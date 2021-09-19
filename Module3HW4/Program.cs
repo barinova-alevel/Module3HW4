@@ -1,10 +1,9 @@
-﻿using System;
-
-namespace Module3HW4
+﻿namespace Module3HW4
 {
-    class Program
+    using System;
+    public class Program
     {
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
