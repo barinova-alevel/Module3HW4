@@ -2,7 +2,7 @@
 {
     using Module3HW4.Models;
 
-    public interface IShrubsProvider
+    public interface IPlantsProvider
     {
         Plant[] Plants { get; }
     }

@@ -6,7 +6,7 @@
     using Module3HW4.Models.Plants.Shrubs.EvergreenShrubs;
     using Module3HW4.Models.Plants.Shrubs;
 
-    public class PlantsProvider : IShrubsProvider
+    public class PlantsProvider : IPlantsProvider
     {
         public PlantsProvider()
         {
@@ -16,7 +16,7 @@
                     {
                      Name = "BuxusSempervirens",
                      OriginCountry = OriginCountry.Ukraine,
-                     Space = new Space { Value = 2.5, Unit = "squareMeters" },
+                     Space = new Space(2.5) { Unit = "squareMeters" },
                      ShrubShape = ShrubShape.Columnar,
                      EvergreenShrubType = EvergreenShrubType.Climbing,
                      MinTemperature = MinTemperature.MinusTen
@@ -26,7 +26,7 @@
                     {
                      Name = "UlmusParvifolia",
                      OriginCountry = OriginCountry.Canada,
-                     Space = new Space { Value = 0.5, Unit = "squareMeters" },
+                     Space = new Space(0.5) { Unit = "squareMeters" },
                      ShrubShape = ShrubShape.HorizontalSpreading,
                      EvergreenShrubType = EvergreenShrubType.Heather,
                      UndersizedType = UndersizedType.Border
@@ -36,7 +36,7 @@
                     {
                      Name = "Callistemon",
                      OriginCountry = OriginCountry.France,
-                     Space = new Space { Value = 0.5, Unit = "squareMeters" },
+                     Space = new Space(1.5) { Unit = "squareMeters" },
                      ShrubShape = ShrubShape.HorizontalSpreading,
                      FloweringShrubType = FloweringShrubType.Azalea
                     },
@@ -45,7 +45,7 @@
                     {
                      Name = "TrueGooseberries",
                      OriginCountry = OriginCountry.Ukraine,
-                     Space = new Space { Value = 1, Unit = "squareMeters" },
+                     Space = new Space(1) { Unit = "squareMeters" },
                      ShrubShape = ShrubShape.HorizontalSpreading,
                      FruitAndBerryShrubTypes = FruitAndBerryShrubTypes.Gooseberry
                     },
@@ -54,7 +54,7 @@
                     {
                      Name = "CulinaryGooseberries",
                      OriginCountry = OriginCountry.Canada,
-                     Space = new Space { Value = 1, Unit = "squareMeters" },
+                     Space = new Space(2) { Unit = "squareMeters" },
                      ShrubShape = ShrubShape.HorizontalSpreading,
                      FruitAndBerryShrubTypes = FruitAndBerryShrubTypes.Gooseberry
                     }
